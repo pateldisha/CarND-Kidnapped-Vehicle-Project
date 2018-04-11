@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master
+# Install script for directory: /mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

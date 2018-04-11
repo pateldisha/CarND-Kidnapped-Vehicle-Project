@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/helper_functions.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/helper_functions.h
 sstream
 -
 fstream
@@ -16,9 +16,9 @@ math.h
 vector
 -
 map.h
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/map.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/map.h
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/json.hpp
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/json.hpp
 algorithm
 -
 array
@@ -74,21 +74,21 @@ utility
 vector
 -
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/main.cpp
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/main.cpp
 uWS/uWS.h
 -
 iostream
 -
 json.hpp
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/json.hpp
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/json.hpp
 math.h
 -
 particle_filter.h
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/particle_filter.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/particle_filter.h
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/map.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/map.h
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/particle_filter.cpp
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp
 random
 -
 algorithm
@@ -108,9 +108,9 @@ string
 iterator
 -
 particle_filter.h
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/particle_filter.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/particle_filter.h
 
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/particle_filter.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/particle_filter.h
 helper_functions.h
-/mnt/c/Users/disha.patel/Downloads/CarND-Kidnapped-Vehicle-Project-master/src/helper_functions.h
+/mnt/c/Users/disha.patel/Documents/CarND-Kidnapped-Vehicle-Project/src/helper_functions.h
 
