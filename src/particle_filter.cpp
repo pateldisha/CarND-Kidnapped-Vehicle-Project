@@ -119,18 +119,17 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 	
     for(int j = 0; j<observations.size(); j++){                                                        
 	
-      double o_transformed_x = observations[j].x* cos(p_theta) - observations[j].y * sin(p_theta) + p_x; 
-      double o_transformed_y = observations[j].x * sin(p_theta) + observations[j].y * cos(p_theta) + p_y;                                                    
-      if(pow(pow(o_transformed_x-p_x,2)+pow(o_transformed_y-p_y,2),0.5) > sensor_range) continue;                                        
-      particles[i].sense_x.push_back(o_transformed_x);
-      particles[i].sense_y.push_back(o_transformed_y);                                                                           
+      double transformed_x = observations[j].x* cos(p_theta) - observations[j].y * sin(p_theta) + p_x; 
+      double transformed_y = observations[j].x * sin(p_theta) + observations[j].y * cos(p_theta) + p_y;                                                    
+      if(pow(pow(transformed_x-p_x,2)+pow(transformed_y-p_y,2),0.5) > sensor_range) continue;                                        
+      particles[i].sense_x.push_back(transformed_x);
+      particles[i].sense_y.push_back(transformed_y);                                                                           
       double min_dist = 9999999999;                                                                                     
       int min_id=-1;                                                                                                      
       for(int k = 0; k<map_landmarks.landmark_list.size(); k++){                                                         
-        float ld_x = map_landmarks.landmark_list[k].x_f;                                                                 
-        float ld_y = map_landmarks.landmark_list[k].y_f;                                                                 
-        float diff_x = ld_x - o_transformed_x;                                                                                   
-        float diff_y = ld_y - o_transformed_y;                                                                                   
+                                                                      
+        float diff_x = map_landmarks.landmark_list[k].x_f - transformed_x;                                                                                   
+        float diff_y = map_landmarks.landmark_list[k].y_f - transformed_y;                                                                                   
         float dist  = pow(pow(diff_x,2)+pow(diff_y,2),0.5);                                                             
         if(dist < min_dist){                                                                                           
           min_dist = dist;                                                                                             
@@ -142,7 +141,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 
       particles[i].associations.push_back(map_landmarks.landmark_list[min_id].id_i);                                      
 
-      weight = weight * exp(-0.5 * (pow((ld_x - o_transformed_x) / std_landmark[0],2) + pow((ld_y - o_transformed_y) / std_landmark[1],2))) / (2*M_PI*std_landmark[0]*std_landmark[1]);                                                                             
+      weight = weight * exp(-0.5 * (pow((ld_x - transformed_x) / std_landmark[0],2) + pow((ld_y - transformed_y) / std_landmark[1],2))) / (2*M_PI*std_landmark[0]*std_landmark[1]);                                                                             
 
 
     }                                                                                                                    
